@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Main document shell for AI Prompt Vault. -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#120d22">
+  <meta name="description" content="AI Prompt Vault — a premium prompt library for Telegram Mini Apps.">
+  <meta name="robots" content="index,follow">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="favicon.png">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>AI Prompt Vault</title>
+</head>
+<body>
+  <!-- Accessible app shell. All dynamic text is inserted with textContent. -->
+  <div id="app" class="app-shell">
+    <div id="toast-region" class="toast-region" aria-live="polite" aria-atomic="true"></div>
+    <header id="app-header"></header>
+    <main id="page-content" tabindex="-1"></main>
+    <nav id="bottom-nav" aria-label="Primary navigation"></nav>
+  </div>
+
+  <noscript>
+    <div class="noscript">AI Prompt Vault requires JavaScript to run.</div>
+  </noscript>
+
+  <!-- Telegram SDK is external and intentionally loaded before the app modules. -->
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

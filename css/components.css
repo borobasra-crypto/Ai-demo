@@ -1,0 +1,47 @@
+/* Purpose: reusable controls, cards, badges, prompts, dialogs and feedback. */
+.glass-card{background:var(--surface);border:1px solid var(--border);box-shadow:var(--shadow);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-radius:var(--radius)}
+.btn{min-height:var(--tap);display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:0 16px;border-radius:14px;cursor:pointer;transition:.18s ease;color:var(--text);background:rgba(255,255,255,.07);border:1px solid var(--border)}
+.btn:hover{transform:translateY(-1px);background:rgba(255,255,255,.11)}
+.btn:active{transform:translateY(0)}
+.btn:focus-visible,.icon-btn:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.btn-primary{background:linear-gradient(135deg,var(--accent),var(--accent-2));border-color:transparent;color:white}
+.btn-danger{color:#ffd9df;border-color:rgba(255,107,129,.25)}
+.icon-btn{width:var(--tap);height:var(--tap);display:inline-grid;place-items:center;border-radius:50%;cursor:pointer;color:var(--text);background:rgba(255,255,255,.06);border:1px solid var(--border)}
+.eyebrow{font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;color:var(--accent)}
+.muted{color:var(--muted)}
+.badge{display:inline-flex;align-items:center;gap:5px;padding:5px 9px;border-radius:999px;font-size:.72rem;font-weight:700;background:rgba(255,255,255,.08);color:var(--muted)}
+.badge-premium{background:rgba(208,92,255,.14);color:#e7b8ff}
+.badge-ultra{background:rgba(255,207,102,.13);color:#ffdc82}
+.badge-free{background:rgba(82,223,155,.11);color:#78efb1}
+.search-box{display:flex;align-items:center;gap:10px;padding:0 14px;min-height:48px;border-radius:16px;background:rgba(255,255,255,.06);border:1px solid var(--border)}
+.search-box input{flex:1;min-width:0;border:0;outline:0;background:transparent;color:var(--text)}
+.search-box input::placeholder{color:#7f7790}
+.chip-row{display:flex;gap:8px;overflow:auto;padding-bottom:4px;scrollbar-width:none}
+.chip-row::-webkit-scrollbar{display:none}
+.chip{min-height:38px;padding:0 13px;border-radius:999px;white-space:nowrap;border:1px solid var(--border);background:rgba(255,255,255,.05);color:var(--muted);cursor:pointer}
+.chip.active{color:white;background:rgba(155,108,255,.18);border-color:rgba(155,108,255,.35)}
+.prompt-card{overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.prompt-thumb{aspect-ratio:16/9;background:linear-gradient(135deg,#21143d,#10101d);position:relative;overflow:hidden}
+.prompt-thumb img{width:100%;height:100%;object-fit:cover}
+.prompt-body{padding:14px}
+.prompt-title{font-size:1rem;line-height:1.35;font-weight:750;margin:7px 0}
+.prompt-meta{display:flex;align-items:center;justify-content:space-between;gap:8px;color:var(--muted);font-size:.78rem}
+.prompt-actions{display:flex;gap:8px;margin-top:13px}
+.prompt-actions .btn{flex:1}
+.favorite-btn.is-favorite{color:#ff8fab}
+.lock-overlay{position:absolute;inset:0;display:grid;place-items:center;background:rgba(7,5,15,.38);backdrop-filter:blur(4px)}
+.lock-icon{width:48px;height:48px;display:grid;place-items:center;border-radius:50%;background:rgba(0,0,0,.45);border:1px solid rgba(255,255,255,.12)}
+.stat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.stat{padding:12px;border-radius:15px;background:rgba(255,255,255,.045);border:1px solid var(--border)}
+.stat strong{display:block;font-size:1.05rem}
+.stat span{font-size:.72rem;color:var(--muted)}
+.empty-state{text-align:center;padding:42px 18px}
+.empty-icon{font-size:2rem;margin-bottom:10px}
+.toast{padding:12px 14px;border-radius:14px;background:#211b31;color:var(--text);border:1px solid var(--border);box-shadow:var(--shadow);animation:fadeUp .2s ease}
+.modal-backdrop{position:fixed;inset:0;background:rgba(0,0,0,.66);z-index:50;display:grid;place-items:end center;padding:12px}
+.modal{width:min(100%,560px);max-height:90vh;overflow:auto;background:var(--surface-solid);border:1px solid var(--border);border-radius:24px;padding:20px;box-shadow:var(--shadow)}
+.modal-header{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:16px}
+.field{display:grid;gap:7px}
+.field label{font-size:.8rem;color:var(--muted)}
+.field select{min-height:44px;background:#20182f;color:var(--text);border:1px solid var(--border);border-radius:12px;padding:0 12px}
+.skeleton{background:linear-gradient(90deg,rgba(255,255,255,.04),rgba(255,255,255,.09),rgba(255,255,255,.04));background-size:200% 100%;animation:pulse 1.2s infinite}

@@ -1,0 +1,11 @@
+/* Purpose: mobile-first refinements and larger-screen layouts. */
+@media (min-width:700px){
+  #page-content{padding-top:26px}
+  .grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+  #bottom-nav{left:50%;right:auto;transform:translateX(-50%);width:min(680px,100%);border:1px solid var(--border);border-bottom:0;border-radius:20px 20px 0 0}
+  .detail-body{padding:24px}
+}
+@media (min-width:980px){
+  .grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+  .hero{padding:28px}
+}

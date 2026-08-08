@@ -1,0 +1,6 @@
+{
+  "themes": [
+    {"id":"purple","label":"Purple"},
+    {"id":"dark","label":"Dark"}
+  ]
+}

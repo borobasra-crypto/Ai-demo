@@ -1,1 +1,44 @@
-
+{
+  "en": {
+    "home": "Home",
+    "explore": "Explore",
+    "daily": "Daily",
+    "profile": "Profile",
+    "search": "Search prompts",
+    "trending": "Trending",
+    "recent": "Recently Added",
+    "premium": "Premium",
+    "favorites": "Favorites",
+    "history": "History",
+    "copy": "Copy",
+    "download": "Download TXT",
+    "favorite": "Favorite",
+    "unfavorite": "Remove Favorite",
+    "unlock": "Unlock",
+    "claimed": "Already Claimed",
+    "bonusAvailable": "Today's Bonus Available",
+    "noResults": "No prompts found.",
+    "clear": "Clear Local Data"
+  },
+  "bn": {
+    "home": "হোম",
+    "explore": "এক্সপ্লোর",
+    "daily": "ডেইলি",
+    "profile": "প্রোফাইল",
+    "search": "প্রম্পট সার্চ করুন",
+    "trending": "ট্রেন্ডিং",
+    "recent": "নতুন যোগ হয়েছে",
+    "premium": "প্রিমিয়াম",
+    "favorites": "ফেভারিট",
+    "history": "হিস্টোরি",
+    "copy": "কপি",
+    "download": "TXT ডাউনলোড",
+    "favorite": "ফেভারিট",
+    "unfavorite": "ফেভারিট থেকে সরান",
+    "unlock": "আনলক",
+    "claimed": "ইতিমধ্যে নেওয়া হয়েছে",
+    "bonusAvailable": "আজকের বোনাস প্রস্তুত",
+    "noResults": "কোনো প্রম্পট পাওয়া যায়নি।",
+    "clear": "লোকাল ডাটা মুছুন"
+  }
+}
